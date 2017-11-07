@@ -6,7 +6,7 @@ package de.cmc.android.utils;
 
 public class UrlConstants {
 
-	public final static String BASE_URL                 = "https://staging.cmc.arconsis.com/api";
+	public final static String BASE_URL                 = "https://my.netscalenow.de/api";
 	public static final String TOKEN_PATH               = "/token";
 	public static final String REFRESH_PATH             = "/token/refresh";
 	public static final String CAMPAIGNS_CONTAINER_PATH = "/campaigns/container";
