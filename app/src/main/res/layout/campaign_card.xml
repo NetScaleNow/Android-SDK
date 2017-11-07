@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:padding="@dimen/campaign_card_padding">
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/card_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:cardCornerRadius="0dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_small"
+			android:orientation="vertical">
+
+			<android.support.constraint.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="@dimen/margin_small"
+				android:orientation="vertical">
+
+				<ImageButton
+					android:id="@+id/ib_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/ic_info_outline_black_24dp"
+					android:backgroundTint="@color/colorAccentCmc"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:ignore="ContentDescription"/>
+
+				<ImageView
+					android:id="@+id/iv_logo"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_marginStart="@dimen/margin_small"
+					android:scaleType="fitStart"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintLeft_toRightOf="@+id/ib_info"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:ignore="ContentDescription"/>
+
+				<TextView
+					android:id="@+id/tv_discount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+					android:textColor="@android:color/black"
+					android:textStyle="bold"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintRight_toLeftOf="@+id/ib_details"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:text="20%"/>
+
+				<ImageButton
+					android:id="@+id/ib_details"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/ic_chevron_right_black_24dp"
+					android:backgroundTint="@color/colorAccentCmc"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:ignore="ContentDescription"/>
+
+			</android.support.constraint.ConstraintLayout>
+
+			<RelativeLayout
+				android:id="@+id/layout_limitations"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<View
+					android:id="@+id/divider"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_margin="1dp"
+					android:background="@color/colorDivider"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignTop="@id/divider"
+					android:layout_margin="@dimen/margin_small"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/tv_limitations"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/margin_small"
+						android:textStyle="italic"
+						android:gravity="start"
+						android:textColor="@android:color/black"
+						android:textSize="@dimen/text_default"/>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>

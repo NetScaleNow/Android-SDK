@@ -1,0 +1,35 @@
+<resources>
+	<string name="app_name">CMC Mobile</string>
+	<string name="campaign_title">VIELEN DANK FÜR IHREN EINKAUF!</string>
+	<string name="campaign_subtitle">Als Dankeschön dürfen Sie sich einen Gratisgutschein aussuchen.</string>
+	<string name="footer_terms">AGB</string>
+	<string name="footer_privacy">Datenschutz</string>
+	<string name="footer_copyright">© Premium Shopping</string>
+	<string name="accept_terms_of_use_and_privacy">Bitte akzeptieren Sie die Nutzungs- und Datenschutzbedingungen.</string>
+	<string name="voucher_title">IHR GUTSCHEINCODE</string>
+	<string name="error_message">Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+	<string name="discount_text">Gutschein*</string>
+	<string name="email_hint">E-Mail-Adresse eingeben</string>
+	<string name="show_voucher">GUTSCHEINCODE ANZEIGEN</string>
+	<string name="newsletter_title">Jetzt zweiten Gutschein aussuchen?</string>
+	<string name="newsletter_title_new">Sie wollen noch mehr sparen beim Shoppen?</string>
+	<string name="newsletter_subtitle">Einfach zum Newsletter anmelden!</string>
+	<string name="newsletter_subtitle_new">Suchen Sie sich exklusiv einen weiteren Gutschein aus!</string>
+	<string name="newsletter_user_agreement">Ja, ich möchte künftig den kostenlosen Premium Shopping Newsletter per E-Mail erhalten. Das Einverständnis kann ich jederzeit widerrufen.</string>
+	<string name="voucher_button_newsletter">ANMELDEN</string>
+	<string name="voucher_button_newsletter_new">ZU DEN GUTSCHEINEN</string>
+	<string name="voucher_note">Sie erhalten den Gutschein in wenigen Augenblicken zusätzlich per Mail.</string>
+	<string name="maximum_reached">Sie haben die maximale Anzahl an Gutscheinen erreicht.\nWir halten Sie über neue Gutscheine per Newsletter auf dem
+		Laufenden.\nViel Spaß beim Shoppen!</string>
+	<string name="voucher_shoplink">Zum Shop >></string>
+	<string name="main_button">Zeige Gutscheinauswahl</string>
+	<string name="detail_terms">Ja, hiermit bestätige ich, dass ich die Nutzungs- und Datenschutzbedingungen gelesen und akzeptiert habe.</string>
+	<string name="detail_terms_1">Ja, hiermit bestätige ich, dass ich die</string>
+	<string name="detail_terms_2">Nutzungs- und Datenschutzbedingungen</string>
+	<string name="detail_terms_3">gelesen und akzeptiert habe.</string>
+	<string name="detail_show_privacy">Datenschutz anzeigen</string>
+	<string name="detail_show_terms">Nutzungsbedingungen anzeigen</string>
+	<string name="detail_choose_action">Aktion wählen</string>
+	<string name="detail_dialog_cancel">Abbrechen</string>
+	<string name="detail_voucher_conditions">*Gutscheinbedingungen\n\n%1$s</string>
+</resources>

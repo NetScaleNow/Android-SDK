@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="match_parent"
+			 android:layout_height="wrap_content"
+			 android:background="@color/colorPagerBackground">
+
+	<TextView
+		android:id="@+id/tv_limitations"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/pager_text_margin"
+		android:gravity="start"
+		android:padding="@dimen/padding_default"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/text_default"
+		android:textStyle="italic"/>
+</FrameLayout>

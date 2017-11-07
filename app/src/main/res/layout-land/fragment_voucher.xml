@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@android:color/white"
+			  android:baselineAligned="false"
+			  android:orientation="horizontal"
+			  android:weightSum="3">
+
+	<RelativeLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_margin="@dimen/margin_default"
+		android:layout_weight="1.5"
+		android:background="@drawable/layout_background_grey"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/tv_newsletter_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerInParent="true"
+			android:layout_margin="@dimen/margin_default"
+			android:fontFamily="serif"
+			android:gravity="center"
+			android:text="@string/newsletter_title"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_large"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/tv_newsletter_subtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/tv_newsletter_title"
+			android:layout_centerInParent="true"
+			android:fontFamily="serif"
+			android:gravity="center"
+			android:text="@string/newsletter_subtitle"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_default2"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/tv_voucher_maximum"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_margin="@dimen/margin_default"
+			android:fontFamily="serif"
+			android:gravity="center"
+			android:text="@string/maximum_reached"
+			android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+			android:textColor="@android:color/black"
+			android:textStyle="bold"
+			android:visibility="gone"/>
+
+		<CheckBox
+			android:id="@+id/cb_newsletter_user_agreement"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/bt_register_newsletter"
+			android:layout_below="@id/tv_newsletter_subtitle"
+			android:layout_centerInParent="true"
+			android:buttonTint="@color/colorAccentCmc"
+			android:text="@string/newsletter_user_agreement"
+			android:textSize="@dimen/text_small"/>
+
+		<Button
+			android:id="@+id/bt_register_newsletter"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerInParent="true"
+			android:layout_marginBottom="@dimen/margin_default"
+			android:layout_marginLeft="@dimen/margin_default"
+			android:layout_marginRight="@dimen/margin_default"
+			android:background="@drawable/buttonshape"
+			android:text="@string/voucher_button_newsletter"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/text_medium"/>
+	</RelativeLayout>
+
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1.5"
+		android:orientation="vertical">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_default">
+
+			<ImageButton
+				android:id="@+id/ib_quit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end"
+				android:background="@drawable/buttonshape_navigation"
+				android:onClick="quitDialog"
+				android:src="@drawable/ic_clear_white_24dp"
+				tools:ignore="ContentDescription"/>
+
+		</FrameLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/margin_default"
+			android:layout_marginTop="@dimen/margin_default"
+			android:background="@drawable/layout_background_grey"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_voucher_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/margin_default"
+				android:gravity="center"
+				android:text="@string/voucher_title"
+				android:textColor="@android:color/black"/>
+
+			<EditText
+				android:id="@+id/et_code"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin_default"
+				android:background="@drawable/edit_text_border"
+				android:gravity="center"
+				android:inputType="none"
+				android:maxLines="1"
+				android:padding="@dimen/padding_default"
+				android:textColor="@android:color/black"
+				android:textIsSelectable="true"
+				android:textStyle="bold"
+				tools:text="misterspex9"/>
+
+			<TextView
+				android:id="@+id/tv_shoplink"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_default"
+				android:gravity="center"
+				android:text="@string/voucher_shoplink"
+				android:textColor="@color/colorAccentCmc"
+				android:textStyle="bold|italic"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tv_voucher_note"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="@dimen/margin_small"
+			android:gravity="center"
+			android:text="@string/voucher_note"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_small"/>
+	</LinearLayout>
+
+
+</LinearLayout>
