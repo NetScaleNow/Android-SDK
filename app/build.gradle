@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 ext {
-    PUBLISH_GROUP_ID = 'de.cmc.android'
-    PUBLISH_ARTIFACT_ID = 'voucher-android-sdk'
+    PUBLISH_GROUP_ID = 'de.netscalenow.android'
+    PUBLISH_ARTIFACT_ID = 'voucher-sdk'
     PUBLISH_VERSION = '1.2'
 }
 
