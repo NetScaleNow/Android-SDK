@@ -17,6 +17,7 @@ public class Campaign implements Parcelable {
 	private String discount;
 	private String description;
 	private String limitations;
+	private String limitationsDescription;
 	private String logUrl;
 	private String headerUrl;
 	private String shopLink;
@@ -98,15 +99,26 @@ public class Campaign implements Parcelable {
 		if (limits != null) {
 			limitations = limits.replace("\\n", "\n");
 		}
+
+		final String limitsDescription = json.optString("limitationsDescription");
+		if (limitsDescription != null) {
+			limitationsDescription = limitsDescription.replace("\\n", "\n");
+		}
 	}
 
-	public Campaign(int id, String name, String discount, String logUrl, String headerUrl, String limitations, String description, String shopLink) {
+	public String getLimitationsDescription()
+	{
+		return limitationsDescription;
+	}
+
+	public Campaign(int id, String name, String discount, String logUrl, String headerUrl, String limitations, String limitationsDescription, String description, String shopLink) {
 		this.id = id;
 		this.name = name;
 		this.discount = discount;
 		this.logUrl = logUrl;
 		this.headerUrl = headerUrl;
 		this.limitations = limitations;
+		this.limitationsDescription = limitationsDescription;
 		this.description = description;
 		this.shopLink = shopLink;
 	}
@@ -132,6 +144,7 @@ public class Campaign implements Parcelable {
 		this.discount = in.readString();
 		this.description = in.readString();
 		this.limitations = in.readString();
+		this.limitationsDescription = in.readString();
 		this.logUrl = in.readString();
 		this.headerUrl = in.readString();
 		this.shopLink = in.readString();

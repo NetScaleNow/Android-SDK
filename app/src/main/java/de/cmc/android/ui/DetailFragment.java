@@ -155,7 +155,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
 			}
 		});
 
-		initViewPager(view, campaign.getHeaderUrl(), campaign.getLimitations());
+		initViewPager(view, campaign.getHeaderUrl(), campaign.getLimitationsDescription());
 
 		showLimitations.setBackgroundTintList(ColorStateList.valueOf(StartpageFragment.APP_PRIMARY_COLOR));
 		acceptTerms.setButtonTintList(ColorStateList.valueOf(StartpageFragment.APP_PRIMARY_COLOR));

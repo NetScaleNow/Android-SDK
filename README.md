@@ -55,6 +55,10 @@ Konstantentnamen der Extras:
 Hinweis: Für das Geschlecht wir das Enum ```Gender``` aus der Klasse ```Metadata``` verwendet. Hier kann entweder der Typ **Male** oder **Female** 
 ausgewählt und als Extra mitgegeben werden.
 
+## Entwicklung
+
+Für die Entwicklung muss in Android Studio die BuildVariant von auf dev gestellt werden. Damit die Application im Emulator gestartet werden kann muss in der build.gradle `apply plugin: 'com.android.library'` durch '`apply plugin: 'com.android.application'` ersetzt werden. Sobald die Entwicklung abgeschlossen ist muss diese Änderung wieder Rückgänig gemacht werden!
+
 ## Author
 
 NetScaleNow, support@netscalenow.com
