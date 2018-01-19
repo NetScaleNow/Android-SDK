@@ -85,7 +85,7 @@ public class CampaignAdapter extends RecyclerView.Adapter<CampaignAdapter.MyView
 	public void onBindViewHolder(final MyViewHolder holder, final int position) {
 		final Campaign campaign = campaignList.get(position);
 		holder.discount.setText(campaign.getDiscount());
-		Picasso.with(context).load("https://my.netscalenow.de/r/resize?url=" + campaign.getLogUrl() + "&width=900&height=200").into(holder.logo);
+		Picasso.with(context).load("https://my.netscalenow.de/r/fit?url=" + campaign.getLogUrl() + "&width=900&height=200").into(holder.logo);
 
 		//check if view is expanded
 		final boolean isExpanded = expandState.get(position);
